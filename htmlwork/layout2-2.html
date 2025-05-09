@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        header,nav,footer{
+            width: 80%;
+            height: 10%;
+        }
+        *{
+            margin: 0;  /* *은 모든 태그 */
+            padding: 0;   
+        }
+        body{background-color: #c8e6c9;}
+        header{
+            background-color: #2e7d32;
+            /* width: 80%;
+            height: 10%;     */
+        }
+        nav{
+            background-color: #388e3c;
+            /* width: 80%;
+            height: 10%; */
+        }
+        aside{
+            background-color: #43a047;
+            width: 20%;
+            height: 67%;
+            float: left;
+        }
+        section{
+            background-color: #4caf50;
+            width: 80%;
+            height: 67%;
+        }
+        footer{
+            background-color: #66bb6a;
+            /* width: 80%;
+            height: 10%; */
+            clear:both;/*content이후 left적용 안 받겠다.*/
+        }
+        body{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <div class="main">
+            <aside>side</aside>
+            <section>contents</section>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
