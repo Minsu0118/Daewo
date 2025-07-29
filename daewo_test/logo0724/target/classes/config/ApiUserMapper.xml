@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="repository.ApiUserMapper">
+
+    <delete id="deleteAll">
+        DELETE FROM api_user
+    </delete>
+
+    <insert id="insert" parameterType="model.ApiUser">
+        INSERT INTO api_user (id, name, username, email)
+        VALUES (#{id}, #{name}, #{username}, #{email})
+    </insert>
+
+    <select id="findAll" resultType="model.ApiUser">
+        SELECT * FROM api_user
+    </select>
+    
+    
+
+</mapper>
